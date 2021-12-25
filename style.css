@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --dark-blue: #31326f;
+  --blue: #005490;
+  --light-blue: #1496bb;
+  --sky-blue: #87ceeb;
+  --green: #77a047;
+  --orange: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 90em;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+section {
+  height: 100vh;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue) url("images/security.jpg") no-repeat center/cover;
+}
+
+.box {
+  background-color: var(--blue);
+  padding: 2.75em;
+  width: 40em;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 0.75em;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  color: var(--white);
+  padding: 0.75em 0;
+  border-bottom: 1px solid var(--grey);
+}
+
+.form-field label {
+  cursor: pointer;
+}
+
+.p-header {
+  position: relative;
+}
+
+.p-header input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+  color: var(--white);
+  /* color: var(--black); */
+  background-color: var(--light-blue);
+  /* background-color: var(--sky-blue); */
+  padding: 1.1em;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.p-header button,
+.form-field input[type="number"] {
+  padding: 0.2em 0.3em;
+  background-color: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 3px 0 0 0;
+  font-size: 1.4rem;
+}
+
+.p-header button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+#submit {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 1.2em;
+  margin: 1em auto;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#submit:hover {
+  background-color: var(--orange);
+}
